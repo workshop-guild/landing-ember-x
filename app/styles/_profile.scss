@@ -1,0 +1,33 @@
+.profile-page {
+  @include make-row();
+
+  .profile-headboard {
+    @include make-row();
+    @include make-md-column(2);
+    .avatar {
+      img {
+        @extend .img-responsive;
+      }
+      @include make-xs-column(4);
+      @include make-md-column(12);
+    }
+    .identification {
+      @include make-xs-column(8);
+      @include make-md-column(12);
+      .username {
+      }
+      .name {
+      }
+      .company-role {
+
+      }
+    }
+  }
+  .profile-details {
+    @include make-xs-column(12);
+    @include make-md-column(10);
+  }
+  .profile-edit-form {
+    @include make-md-column(12);
+  }
+}

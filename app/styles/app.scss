@@ -1,0 +1,92 @@
+$icon-font-path: "../fonts/";
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "bower_components/Bootflat/bootflat/scss/bootflat";
+
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro);
+* {
+  font-family: Maven Pro;
+}
+
+@import "mixins";
+
+@import "index";
+@import "guild";
+@import "profile";
+
+.page {
+
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  flex: 1;
+}
+
+.visible-xs-row {
+  @media (min-width: $screen-xs-min) {
+    @include make-row();
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+textarea {
+  resize: none;
+}
+
+.ember-list-view {
+  overflow: auto;
+  position: relative;
+}
+
+.ember-list-item-view {
+  position: absolute;
+}
+
+.frame-z0 {
+  z-index: 0;
+  @include frame-animation;
+}
+
+.frame-z1 {
+  z-index: 1;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+  @include frame-animation;
+}
+
+.frame-z2 {
+  z-index: 2;
+  box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
+  @include frame-animation;
+}
+
+.frame-z3 {
+  z-index: 3;
+  box-shadow: 0px 17px 50px rgba(0, 0, 0, 0.19);
+  @include frame-animation;
+}
+
+.frame-z4 {
+  z-index: 4;
+  box-shadow: 0px 16px 28px 0 rgba(0, 0, 0, 0.22);
+  @include frame-animation;
+}
+
+.frame-z5 {
+  z-index: 5;
+  box-shadow: 0px 27px 24px 0 rgba(0, 0, 0, 0.2);
+  @include frame-animation;
+}

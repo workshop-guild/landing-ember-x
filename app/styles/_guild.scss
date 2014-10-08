@@ -1,0 +1,37 @@
+.guild-grid {
+  @extend .row;
+
+  .tile {
+    @include make-md-column(3);
+
+    .contents {
+      @extend .jumbotron;
+
+      transition: all .2s linear;
+
+      .picture {
+        @extend .jumbotron-photo;
+      }
+
+      .texts {
+        @extend .jumbotron-contents;
+        .name {
+          @extend .h4;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        .description {
+          height: $line-height-computed * 2;
+          overflow: hidden;
+          margin-bottom: $line-height-computed;
+        }
+        .link {
+          > a {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+

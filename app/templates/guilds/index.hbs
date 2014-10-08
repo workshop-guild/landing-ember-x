@@ -1,0 +1,24 @@
+<div class="page">
+    <div class="guild-grid">
+        {{#each guild in guilds}}
+        <div class="tile">
+            <div class="contents">
+                <div class="picture">
+                    <img {{bind-attr src=guild.pic}} alt="GuildPicture">
+                </div>
+                <div class="texts">
+                    <div class="name">
+                        {{guild.name}} {{guild.id}}
+                    </div>
+                    <div class="description">
+                        {{guild.desc}}
+                    </div>
+                    <div class="link">
+                        {{link-to 'Visit this guild' 'guilds.guild' guild class="btn btn-primary"}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

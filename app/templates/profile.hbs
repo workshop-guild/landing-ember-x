@@ -1,0 +1,25 @@
+<div class="profile-page">
+  {{!-- <section class="profile">
+    {{format-markdown profile}}
+  </section>
+  <section class="editor">
+    {{textarea class="form-control" value=profile}}
+  </section> --}}
+  {{!-- <div class="profile-headboard">
+    <section class="avatar"><img {{bind-attr src=avatarURL}} alt=""></section>
+    <section class="identification">
+      <h4><div class="username">{{view 'profileEditableTextField' prefix="@" field=username}}</div></h4>
+      <h5><div class="name">{{view 'profileEditableTextField' field=firstname}} {{view 'profileEditableTextField' field=lastname}}</div></h5>
+      <div class="company-role">{{role}}</div>
+    </section>
+  </div>
+  <div class="profile-details">
+    <section class="introduction">{{view 'profileEditableTextArea' value=introduction}}</section>
+    <section class="details">{{view 'profileEditableTextArea' value=details}}</section>
+  </div> --}}
+  {{#if isEditing}}
+  {{partial 'profile/profile-edit'}}
+  {{else}}
+  {{partial 'profile/profile'}}
+  {{/if}}
+</div>

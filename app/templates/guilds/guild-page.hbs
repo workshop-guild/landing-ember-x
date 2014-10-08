@@ -1,0 +1,9 @@
+<div class="col-md-12">
+  <div style="position: absolute; right: 15px; z-index: 1;">
+    <button {{bind-attr class=":btn profile:btn-default:btn-default"}} {{action "editPage"}}>
+      Edit
+    </button>
+  </div>
+  <h1>{{name}}</h1>
+  {{format-markdown page}}
+</div>

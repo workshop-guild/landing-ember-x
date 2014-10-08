@@ -1,0 +1,28 @@
+<div class="col-md-12">
+  <div style="position: absolute; right: 15px; z-index: 1;">
+    <button {{bind-attr class=":btn profile:btn-default:btn-primary"}} {{action "editProfile"}}>
+      Edit profile
+    </button>
+  </div>
+</div>
+<div class="profile-headboard">
+  <section class="avatar"><img {{bind-attr src=avatarURL}} alt=""></section>
+  <section class="identification">
+    <h4><div class="username">@{{username}}</div></h4>
+    <h5><div class="name">{{firstname}} {{lastname}}</div></h5>
+    <div class="company-role">{{role}}</div>
+  </section>
+</div>
+<div class="visible-xs">
+  <div class="row"></div>
+</div>
+<div class="profile-details">
+  <section class="profile">
+    {{#unless profile}}
+    <p>You don't have a profile yet.</p>
+    <p>Click on "Edit profile" to make one.</p>
+    {{else}}
+    {{format-markdown profile}}
+    {{/unless}}
+  </section>
+</div>
