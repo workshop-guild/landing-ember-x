@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 var route = Ember.Route.extend({
   model: function(){
-    return Em.A();
+    return Ember.A();
   },
   setupController: function(controller, model){
     controller.set('model', model);
