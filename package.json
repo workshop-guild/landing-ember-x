@@ -9,7 +9,9 @@
   "scripts": {
     "start": "ember server",
     "build": "ember build",
-    "test": "ember test"
+    "test": "ember test",
+    "server": "node server/server.js",
+    "client": "ember build && http-server -p 8000 dist"
   },
   "repository": "https://github.com/stefanpenner/ember-cli",
   "engines": {

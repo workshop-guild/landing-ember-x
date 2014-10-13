@@ -23,6 +23,12 @@ You will need the following things properly installed on your computer.
 * `ember server`
 * Visit your app at http://localhost:4200.
 
+## npm run Scripts
+* `npm run server`
+* Starts the server
+* `npm run client`
+* Builds the client and serves it at port 8000
+
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
